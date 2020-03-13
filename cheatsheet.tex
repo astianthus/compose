@@ -1,0 +1,80 @@
+% Compile with XeLaTeX
+
+\documentclass{article}
+
+\usepackage[landscape, margin=2cm]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Charis SIL}
+
+\usepackage{xcolor}
+
+\newcommand{\seq}[1]{\ \texttt{{\color{purple}#1}}}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\textbf{Some pulmonic consonants}
+\vspace{1em}
+
+\begin{tabular}{|llllllllllll|}
+  \hline
+  & \emph{Bilabial} & \emph{Labiodental} & \emph{Dental} & \emph{Alveolar} & \emph{Postalveolar} & \emph{Retroflex} & \emph{Palatal} & \emph{Velar} & \emph{Uvular} & \emph{Pharyngeal} & \emph{Glottal} \\
+  \hline
+  \emph{Nasal} & m & ɱ \seq{m v} & & n & & ɳ \seq{r n} & ɲ \seq{n j} & ŋ \seq{n g} & ɴ \seq{n ;} & & \\
+  \emph{Voiceless plosive} & p & & & t & & ʈ \seq{r t} & c & k & q & & ʔ \seq{q q} \\
+  \emph{Voiced plosive} & b & & & d & & ɖ \seq{r d} & ɟ \seq{d j} & ɡ \seq{g g} & ɢ \seq{g ;} & & \\
+  \emph{Trill} & ʙ \seq{b ;} & & & r & & & & & ʀ \seq{r ;} & & \\
+  \emph{Tap or flap} & ⱱ \seq{v 4} & & & ɾ \seq{4 4} & & ɽ \seq{r 4} & & & & & \\
+  \emph{Voiceless fricative} & ɸ \seq{p h} & f & θ \seq{0 0} & s & ʃ \seq{s h} & ʂ \seq{r s} & ç \seq{c h} & x & χ \seq{q h} & ħ \seq{h -} & h \\
+  \emph{Voiced fricative} & β \seq{b h} & v & ð \seq{d h} & z & ʒ \seq{z h} & ʐ \seq{r z} & ʝ \seq{j h} & ɣ \seq{g h} & ʁ \seq{r h} & ʕ \seq{? \textbackslash} & ɦ \seq{h h} \\
+  \emph{Lateral fricative} & & & & ɬ \seq{l h} & & & & & & & \\
+  \emph{Approximant} & & ʋ \seq{v h} & & ɹ \seq{r r} & & ɻ \seq{r \textbackslash} & j & ɰ \seq{w w} & & & \\
+  \emph{Lateral approximant} & & & & l & & ɭ \seq{r l} & ʎ \seq{l j} & ʟ \seq{l ;} & & & \\
+  \hline
+\end{tabular}
+\vspace{1.5em}
+
+\begin{minipage}[t]{7cm}
+\textbf{Other consonants\phantom{pg}}
+\vspace{0.7em}
+\par
+\begin{tabular}{|llll|}
+  \hline
+  \emph{Clicks} & \emph{Implosives} & \multicolumn{2}{l|}{\emph{Other pulmonics}}\\
+  \hline
+  ʘ \seq{m x} & ɓ \seq{b <} & ʍ \seq{w h} & ɕ \seq{c ,} \\
+  ǀ \seq{t x} & ɗ \seq{d <} & ɥ \seq{y h} & ʑ \seq{z ,} \\
+  ǃ \seq{r x} & ʄ \seq{j <} & ʜ \seq{h ;} & ɺ \seq{l 4} \\
+  ǂ \seq{c x} & ɠ \seq{g <} & ʢ \seq{? ?} & ɧ \seq{s j} \\
+  ǁ \seq{l x} & ʛ \seq{q <} & ʡ \seq{? -} & ɮ \seq{l z} \\
+  \hline
+\end{tabular}
+\vspace{0.7em}
+\par
+\emph{Ejective mark}\quad ʼ \seq{' x}
+
+\end{minipage}
+\begin{minipage}[t]{11cm}
+\textbf{Vowels\phantom{pg}}
+\vspace{0.7em}
+\par
+\begin{tabular}{|lllllll|}
+  \hline
+  & \multicolumn{2}{l}{\emph{Front}} & \multicolumn{2}{l}{\emph{Central}} & \multicolumn{2}{l|}{\emph{Back}} \\
+  \hline
+  \emph{Close} & i & y & ɨ \seq{i -} & ʉ \seq{u -} & ɯ \seq{u u} & u \\
+  & ɪ \seq{i i} & ʏ \seq{y ;} & & & & ʊ \seq{u ;} \\
+  \emph{Close-mid} & e & ø \seq{o /} & ɘ \seq{e \textbackslash} & ɵ \seq{o -} & ɤ \seq{7 7} & \\
+  & & & ə \seq{e e} & & & \\
+  \emph{Open-mid} & ɛ \seq{e a} & œ \seq{o e} & ɜ \seq{3 3} & ɞ \seq{3 \textbackslash} & ʌ \seq{v v} & ɔ \seq{o a} \\
+  & æ \seq{a e} & & ɐ \seq{a a} & & & \\
+  \emph{Open} & a & ɶ \seq{9 ;} & & & ɑ \seq{a h} & ɒ \seq{a o} \\
+  \hline
+\end{tabular}
+\end{minipage}
+
+\end{document}
